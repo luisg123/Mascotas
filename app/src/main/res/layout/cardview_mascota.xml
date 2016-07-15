@@ -8,39 +8,46 @@
     android:layout_marginBottom="@dimen/activity_vertical_margin"
     card_view:cardCornerRadius="@dimen/corner_radius_cardview">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_margin="@dimen/activity_horizontal_margin">
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        >
             <ImageView
                 android:id="@+id/imgPic"
-                android:layout_width="@dimen/pets"
+                android:layout_width="match_parent"
                 android:layout_height="@dimen/pets"
                 android:layout_gravity="center"
                 android:src="@drawable/bird_48"
                 android:contentDescription="Pets" />
-        <LinearLayout
-            android:layout_width="match_parent"
+
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center_horizontal"
-            >
-            <ImageView
-                android:id="@+id/imgBoneWhite"
-                android:layout_width="@dimen/icon_bone"
-                android:layout_height="@dimen/icon_bone"
-                android:src="@drawable/dog_bone_50"
-                android:contentDescription="Hueso" />
-            <TextView
-                android:id="@+id/tvName"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/pet_name"
-                android:layout_marginTop="@dimen/name_pets"
-                />
+            android:text="@string/pet_name"
+            android:layout_marginTop="@dimen/name_pets"
+            android:drawableLeft="@drawable/dog_bone_50"
+            android:layout_below="@id/imgPic"
+            android:textSize="@dimen/size_pets_text"
+            android:drawablePadding="@dimen/margin_icons"
+            android:textStyle="bold"
+            />
 
-        </LinearLayout>
+        <TextView
+            android:id="@+id/tvLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pet_likes"
+            android:drawableRight="@drawable/dog_bone_48"
+            android:gravity="center"
+            android:layout_alignTop="@+id/tvName"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/size_pets_text"
+            android:drawablePadding="@dimen/margin_icons"
+            android:textStyle="bold"/>
 
-    </LinearLayout>
+    </RelativeLayout>
 </android.support.v7.widget.CardView>
