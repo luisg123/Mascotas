@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvMascota"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    card_view:cardCornerRadius="@dimen/corner_radius_cardview">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/activity_horizontal_margin">
+            <ImageView
+                android:id="@+id/imgFoto"
+                android:layout_width="@dimen/pets"
+                android:layout_height="@dimen/pets"
+                android:layout_gravity="center"
+                android:src="@drawable/bird_48"
+                />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            >
+            <ImageView
+                android:id="@+id/imgBoneWhite"
+                android:layout_width="@dimen/icon_bone"
+                android:layout_height="@dimen/icon_bone"
+                android:src="@drawable/dog_bone_50"
+                />
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/pet_name"
+                android:layout_marginLeft="@dimen/pets_marginleft"
+                android:layout_marginBottom="@dimen/name_pets"
+                android:layout_marginTop="@dimen/name_pets"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
