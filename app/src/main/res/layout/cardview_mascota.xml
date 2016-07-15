@@ -14,12 +14,12 @@
         android:orientation="vertical"
         android:layout_margin="@dimen/activity_horizontal_margin">
             <ImageView
-                android:id="@+id/imgFoto"
+                android:id="@+id/imgPic"
                 android:layout_width="@dimen/pets"
                 android:layout_height="@dimen/pets"
                 android:layout_gravity="center"
                 android:src="@drawable/bird_48"
-                />
+                android:contentDescription="Pets" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -31,14 +31,12 @@
                 android:layout_width="@dimen/icon_bone"
                 android:layout_height="@dimen/icon_bone"
                 android:src="@drawable/dog_bone_50"
-                />
+                android:contentDescription="Hueso" />
             <TextView
                 android:id="@+id/tvName"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/pet_name"
-                android:layout_marginLeft="@dimen/pets_marginleft"
-                android:layout_marginBottom="@dimen/name_pets"
                 android:layout_marginTop="@dimen/name_pets"
                 />
 
