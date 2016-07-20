@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -32,9 +33,11 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
 
     @Override
     public void onBindViewHolder(MascotaViewHolder holder, int position) {
-        Mascota mascota = mascotas.get(position);
+        final Mascota mascota = mascotas.get(position);
         holder.imgFoto.setImageResource(mascota.getFoto());
         holder.tvNombre.setText(mascota.getNombre());
+        holder.tvLike.setText(mascota.getMegusta());
+
     }
 
     @Override

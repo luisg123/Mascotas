@@ -6,12 +6,13 @@ package com.lgcs.mascotas;
 public class Mascota {
     private String nombre;
     private int foto;
-    private int megusta;
+    private String megusta;
     private String raza;
 
-    public Mascota(String nombre, int foto) {
+    public Mascota(String nombre, int foto, String megusta) {
         this.nombre = nombre;
         this.foto = foto;
+        this.megusta = megusta;
     }
 
     public String getNombre() {
@@ -30,11 +31,11 @@ public class Mascota {
         this.foto = foto;
     }
 
-    public int getMegusta() {
+    public String getMegusta() {
         return megusta;
     }
 
-    public void setMegusta(int megusta) {
+    public void setMegusta(String megusta) {
         this.megusta = megusta;
     }
 

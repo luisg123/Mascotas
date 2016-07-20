@@ -3,10 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.lgcs.mascotas.MainActivity"
->
-    <include android:id="@+id/miActionBar"
-        layout="@layout/actionbar"/>
+    tools:context="com.lgcs.mascotas.CincoMascotas">
+
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rvMascotas"
@@ -16,7 +14,6 @@
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
-        android:layout_below="@id/miActionBar"
         />
 
 </RelativeLayout>
