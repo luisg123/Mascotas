@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 import java.util.ArrayList;
@@ -18,9 +20,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-
 
         listaMascotas = (RecyclerView) findViewById(R.id.rvMascotas);
 
@@ -62,5 +61,32 @@ public class MainActivity extends AppCompatActivity {
         mascotas.add(new Mascota("Rabbit 1", R.drawable.rabbit_52,"3"));
         mascotas.add(new Mascota("Rabbit Run 1", R.drawable.running_rabbit_filled_50,"3"));
         mascotas.add(new Mascota("Turtle 1", R.drawable.turtle_52,"4"));
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_opciones,menu);
+        getMenuInflater().inflate(R.menu.menu_star,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()){
+            case R.id.mContact:
+                Intent cIntent = new Intent(this, ActivityContact.class);
+                startActivity(cIntent);
+                break;
+            case R.id.mAbout:
+                Intent aIntent = new Intent(this, ActivityAbout.class);
+                startActivity(aIntent);
+                break;
+            case  R.id.mRefresh:
+                Intent fiveIntent = new Intent(this, CincoMascotas.class);
+                startActivity(fiveIntent);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

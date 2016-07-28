@@ -2,4 +2,13 @@
     <string name="app_name">Mascotas</string>
     <string name="pet_name">Nombre</string>
     <string name="pet_likes">0</string>
+    <string name="title_contact">Contacto</string>
+    <string name="title_about">Acerca de</string>
+    <string name="tName">Luis Campos</string>
+    <string name="tBirth">11 de Septiembre de 1989</string>
+    <string name="tCountry">México</string>
+    <string name="tCity">La Paz, Baja California Sur</string>
+    <string name="tvName">Nombre:</string>
+    <string name="tvEmail">Correo Electrónico:</string>
+    <string name="tvText">Mensaje:</string>
 </resources>

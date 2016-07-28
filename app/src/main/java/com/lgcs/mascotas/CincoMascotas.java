@@ -17,10 +17,6 @@ public class CincoMascotas extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cinco_mascotas);
 
-
-
-
-
         listaMascotas = (RecyclerView) findViewById(R.id.rvMascotas);
 
         LinearLayoutManager llm = new LinearLayoutManager(this);
