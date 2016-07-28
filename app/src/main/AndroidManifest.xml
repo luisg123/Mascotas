@@ -29,7 +29,7 @@
             />
         <activity android:name=".ActivityAbout"
             android:label="Acerca de"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity"/>
     </application>
 
 </manifest>
