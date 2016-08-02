@@ -11,4 +11,8 @@
     <string name="tvName">Nombre:</string>
     <string name="tvEmail">Correo Electrónico:</string>
     <string name="tvText">Mensaje:</string>
+    <string name="btn_send">Enviar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

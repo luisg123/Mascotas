@@ -15,6 +15,11 @@ public class Mascota {
         this.megusta = megusta;
     }
 
+    public Mascota(int foto, String megusta) {
+        this.foto = foto;
+        this.megusta = megusta;
+    }
+
     public String getNombre() {
         return nombre;
     }

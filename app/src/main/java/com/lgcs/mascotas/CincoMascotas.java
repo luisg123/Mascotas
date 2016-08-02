@@ -12,10 +12,12 @@ public class CincoMascotas extends AppCompatActivity {
 
     ArrayList<Mascota> mascotas;
     private RecyclerView listaMascotas;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cinco_mascotas);
+
 
         listaMascotas = (RecyclerView) findViewById(R.id.rvMascotas);
 
