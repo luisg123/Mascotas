@@ -59,11 +59,11 @@ public class Perfil extends Fragment {
     public void inicializarListaMascotas(){
         mascotas = new ArrayList<Mascota>();
 
-        mascotas.add(new Mascota(R.drawable.bird_48,"1"));
-        mascotas.add(new Mascota(R.drawable.cat_filled_50,"16"));
-        mascotas.add(new Mascota(R.drawable.dog_filled_50,"2"));
-        mascotas.add(new Mascota(R.drawable.running_rabbit_filled_50,"3"));
-        mascotas.add(new Mascota(R.drawable.turtle_52,"5"));
+        mascotas.add(new Mascota(R.drawable.bird_48,1));
+        mascotas.add(new Mascota(R.drawable.cat_filled_50,16));
+        mascotas.add(new Mascota(R.drawable.dog_filled_50,2));
+        mascotas.add(new Mascota(R.drawable.running_rabbit_filled_50,3));
+        mascotas.add(new Mascota(R.drawable.turtle_52,5));
     }
 
 }

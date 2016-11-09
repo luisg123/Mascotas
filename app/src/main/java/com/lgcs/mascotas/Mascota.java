@@ -4,20 +4,26 @@ package com.lgcs.mascotas;
  * Created by Tecnologías on 07/07/2016.
  */
 public class Mascota {
+
+    private int id;
     private String nombre;
     private int foto;
-    private String megusta;
+    private int megusta;
     private String raza;
 
-    public Mascota(String nombre, int foto, String megusta) {
+    public Mascota(String nombre, int foto, int megusta) {
         this.nombre = nombre;
         this.foto = foto;
         this.megusta = megusta;
     }
 
-    public Mascota(int foto, String megusta) {
+    public Mascota(int foto, int megusta) {
         this.foto = foto;
         this.megusta = megusta;
+    }
+
+    public Mascota() {
+
     }
 
     public String getNombre() {
@@ -36,11 +42,11 @@ public class Mascota {
         this.foto = foto;
     }
 
-    public String getMegusta() {
+    public int getMegusta() {
         return megusta;
     }
 
-    public void setMegusta(String megusta) {
+    public void setMegusta(int megusta) {
         this.megusta = megusta;
     }
 
@@ -53,4 +59,11 @@ public class Mascota {
     }
 
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 }

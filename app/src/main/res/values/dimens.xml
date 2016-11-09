@@ -8,7 +8,7 @@
     <dimen name="name_pets">5dp</dimen>
     <dimen name="pets_marginleft">15dp</dimen>
     <dimen name="pets_m_left">45dp</dimen>
-    <dimen name="size_pets_text">18dp</dimen>
+    <dimen name="size_pets_text">18sp</dimen>
     <dimen name="margin_icons">10dp</dimen>
     <dimen name="elevacion_actionbar">4dp</dimen>
 </resources>
