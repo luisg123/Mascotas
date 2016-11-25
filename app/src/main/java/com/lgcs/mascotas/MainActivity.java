@@ -1,5 +1,6 @@
 package com.lgcs.mascotas;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -47,15 +48,15 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<Fragment> agregarFragments(){
         ArrayList<Fragment> fragments = new ArrayList<>();
         fragments.add(new ReclyclerViewFragment());
-        fragments.add(new Perfil());
+        fragments.add(new ReclyclerViewFragment());
 
         return fragments;
     }
     private void setUpViewPager(){
         viewPager.setAdapter(new PageAdapter(getSupportFragmentManager(),agregarFragments()));
         tabLayout.setupWithViewPager(viewPager);
-        /*tabLayout.getTabAt(0).setIcon(R.drawable.ic_pets);
-        tabLayout.getTabAt(1).setIcon(R.drawable.ic_pet);*/
+        tabLayout.getTabAt(0).setIcon(R.drawable.ic_pets);
+        tabLayout.getTabAt(1).setIcon(R.drawable.ic_pet);
     }
 
     public void irSegundaActividad(View v){
@@ -83,6 +84,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.mAbout:
                 Intent aIntent = new Intent(this, ActivityAbout.class);
                 startActivity(aIntent);
+                break;
+            case R.id.mConfigurar:
+                Intent cgIntent = new Intent(this, configurar_activity.class);
+                startActivity(cgIntent);
                 break;
             case  R.id.mRefresh:
                 Intent fiveIntent = new Intent(this, CincoMascotas.class);

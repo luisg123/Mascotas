@@ -1,24 +1,26 @@
 package com.lgcs.mascotas;
 
+import java.sql.Struct;
+
 /**
  * Created by Tecnologías on 07/07/2016.
  */
 public class Mascota {
 
-    private int id;
-    private String nombre;
-    private int foto;
+    private String id;
+    private String nombreCompleto;
+    private String urlFoto;
     private int megusta;
-    private String raza;
 
-    public Mascota(String nombre, int foto, int megusta) {
+    /*public Mascota(String nombre, int foto, int megusta) {
         this.nombre = nombre;
         this.foto = foto;
         this.megusta = megusta;
-    }
+    }*/
 
-    public Mascota(int foto, int megusta) {
-        this.foto = foto;
+    public Mascota(String urlFoto, String nombreCompleto, int megusta) {
+        this.urlFoto = urlFoto;
+        this.nombreCompleto = nombreCompleto;
         this.megusta = megusta;
     }
 
@@ -26,20 +28,28 @@ public class Mascota {
 
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getId() {
+        return id;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public int getFoto() {
-        return foto;
+    public String getNombreCompleto() {
+        return nombreCompleto;
     }
 
-    public void setFoto(int foto) {
-        this.foto = foto;
+    public void setNombreCompleto(String nombreCompleto) {
+        this.nombreCompleto = nombreCompleto;
+    }
+
+    public String getUrlFoto() {
+        return urlFoto;
+    }
+
+    public void setUrlFoto(String urlFoto) {
+        this.urlFoto = urlFoto;
     }
 
     public int getMegusta() {
@@ -48,22 +58,5 @@ public class Mascota {
 
     public void setMegusta(int megusta) {
         this.megusta = megusta;
-    }
-
-    public String getRaza() {
-        return raza;
-    }
-
-    public void setRaza(String raza) {
-        this.raza = raza;
-    }
-
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 }

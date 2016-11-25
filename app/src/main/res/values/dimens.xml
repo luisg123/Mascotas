@@ -11,4 +11,6 @@
     <dimen name="size_pets_text">18sp</dimen>
     <dimen name="margin_icons">10dp</dimen>
     <dimen name="elevacion_actionbar">4dp</dimen>
+    <dimen name="padding_button_bottom">10dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 </resources>

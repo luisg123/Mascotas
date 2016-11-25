@@ -5,7 +5,11 @@
     android:layout_height="match_parent"
     tools:context="com.lgcs.mascotas.CincoMascotas">
 
-
+    <TextView
+        android:id="@+id/tvSharedPreference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size_pets_text"/>
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rvMascotas"
         android:layout_width="match_parent"

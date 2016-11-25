@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.lgcs.mascotas">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -23,13 +25,23 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".ActivityContact"
+        <activity
+            android:name=".ActivityContact"
             android:label="Contacto"
-            android:parentActivityName=".MainActivity"
-            />
-        <activity android:name=".ActivityAbout"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ActivityAbout"
             android:label="Acerca de"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".configurar_activity"
+            android:label="@string/title_activity_configurar_activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".MainActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity" />
+        </activity>
     </application>
 
 </manifest>

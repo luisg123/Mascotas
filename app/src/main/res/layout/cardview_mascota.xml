@@ -18,7 +18,6 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/pets"
             android:layout_gravity="center"
-            android:src="@drawable/bird_48"
             android:contentDescription="Pets" />
 
         <LinearLayout

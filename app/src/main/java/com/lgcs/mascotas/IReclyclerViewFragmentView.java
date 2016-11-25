@@ -9,9 +9,14 @@ import java.util.ArrayList;
 public interface IReclyclerViewFragmentView {
 
     public void generarLinearLayoutVertical();
+    public void generarGridLayout();
+
 
     public MascotaAdaptador crearAdaptador (ArrayList<Mascota> mascotas);
 
     public void inicializarAdaptadorRV(MascotaAdaptador adaptador);
+
+    public void obtenerUsuarioBuscado();
+    public void mostrarMascotasRV();
 
 }
